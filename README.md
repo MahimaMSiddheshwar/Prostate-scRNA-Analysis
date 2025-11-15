@@ -1,4 +1,4 @@
-# 📌 Single-Cell Atlas of Mouse Prostate Epithelium: Basal–Luminal Differentiation Mapped Using Seurat
+# Single-Cell Atlas of Mouse Prostate Epithelium: Basal–Luminal Differentiation Mapped Using Seurat
 
 ## 📖 Overview
 This project presents a complete, reproducible **single-cell RNA sequencing (scRNA-seq)** analysis pipeline using the **mouse prostate epithelial dataset (GSE111429)**.  
@@ -18,7 +18,7 @@ This README summarizes the analysis, results, and biological interpretation.
 
 ---
 
-# 🧬 1. Dataset Summary
+# 1. Dataset Summary
 
 **Dataset:** GSE111429 (10x Genomics)  
 **Organism:** *Mus musculus*  
@@ -34,7 +34,7 @@ Identify and characterize **basal**, **luminal**, and **intermediate** cell stat
 
 ---
 
-# 🧹 2. Quality Control (QC)
+# 2. Quality Control (QC)
 
 ### **Filters Applied**
 - **≥ 1000 genes** per cell  
@@ -51,7 +51,7 @@ Identify and characterize **basal**, **luminal**, and **intermediate** cell stat
 
 ---
 
-# 🔧 3. Normalization, HVG Selection & Scaling
+# 3. Normalization, HVG Selection & Scaling
 
 Performed using Seurat’s pipeline:
 - Log-normalization (`LogNormalize`)
@@ -61,7 +61,7 @@ Performed using Seurat’s pipeline:
 
 ---
 
-# 🧠 4. Dimensionality Reduction (PCA)
+# 4. Dimensionality Reduction (PCA)
 
 - PCA performed on the top 2000 HVGs
 - PC inspection done via:
@@ -75,7 +75,7 @@ Performed using Seurat’s pipeline:
 
 ---
 
-# 🧭 5. Clustering & Embedding
+# 5. Clustering & Embedding
 
 ## **Clustering**
 - Louvain algorithm applied on PCA-reduced data  
@@ -94,7 +94,7 @@ Generated both:
 
 ---
 
-# 🧬 6. Marker Gene Analysis
+# 6. Marker Gene Analysis
 
 Used:
 - `FindAllMarkers` (Wilcoxon test)
@@ -127,7 +127,7 @@ Therefore, they accurately label your clusters.
 
 ---
 
-# 🗺️ 7. Cell Type Annotation
+# 7. Cell Type Annotation
 
 Based on marker expression:
 
@@ -148,7 +148,7 @@ Cluster IDs were manually annotated using FeaturePlot overlays.
 
 ---
 
-# 🖼️ 8. Visualizations Included
+# 8. Visualizations Included
 
 All plots were saved automatically:
 - QC violin plots  
@@ -167,7 +167,7 @@ File location:
 
 ---
 
-# 🧪 9. Key Biological Conclusions
+# 9. Key Biological Conclusions
 
 1. **Mouse prostate epithelium contains clear basal and luminal compartments.**  
 2. **Basal cells show overexpression of structural keratins Krt5/Krt14/Krt17.**  
